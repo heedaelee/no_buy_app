@@ -51,10 +51,14 @@ export function register(config) {
         registerValidSW(swUrl, config);
       }
     });
+  } else{
+    // 이곳! (else문 추가)
+    console.log("won't register serviceWorker. Current env:", process.env.NODE_ENV);
   }
 }
 
 function registerValidSW(swUrl, config) {
+  console.log('serviceWorker is registered'); 
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
