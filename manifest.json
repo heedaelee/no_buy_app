@@ -46,11 +46,6 @@
       "type": "image/png"
     },
     {
-      "src": "/icons/favicon-196x196.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
       "src": "/icons/mstile-310x310.png",
       "sizes": "310x310",
       "type": "image/png"
