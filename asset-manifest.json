@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/no_buy_app/static/js/main.512407dd.chunk.js",
-    "main.js.map": "/no_buy_app/static/js/main.512407dd.chunk.js.map",
+    "main.js": "/no_buy_app/static/js/main.ec4c78d8.chunk.js",
+    "main.js.map": "/no_buy_app/static/js/main.ec4c78d8.chunk.js.map",
     "runtime-main.js": "/no_buy_app/static/js/runtime-main.991eec65.js",
     "runtime-main.js.map": "/no_buy_app/static/js/runtime-main.991eec65.js.map",
     "static/js/2.200bdeab.chunk.js": "/no_buy_app/static/js/2.200bdeab.chunk.js",
     "static/js/2.200bdeab.chunk.js.map": "/no_buy_app/static/js/2.200bdeab.chunk.js.map",
     "index.html": "/no_buy_app/index.html",
-    "precache-manifest.c235bb63bdd5acb8b15f99ca6f81f289.js": "/no_buy_app/precache-manifest.c235bb63bdd5acb8b15f99ca6f81f289.js",
+    "precache-manifest.94fad9d527ca8b707b82db6c42d65302.js": "/no_buy_app/precache-manifest.94fad9d527ca8b707b82db6c42d65302.js",
     "service-worker.js": "/no_buy_app/service-worker.js",
     "static/js/2.200bdeab.chunk.js.LICENSE.txt": "/no_buy_app/static/js/2.200bdeab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.991eec65.js",
     "static/js/2.200bdeab.chunk.js",
-    "static/js/main.512407dd.chunk.js"
+    "static/js/main.ec4c78d8.chunk.js"
   ]
 }
