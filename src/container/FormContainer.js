@@ -30,11 +30,12 @@ const FormContainer = ({ brand, BrandActions, page }) => {
     BrandActions.removeBrand(id);
     BrandActions.changePage("list");
   };
+  console.log(page)
 
   return (
     <div>
       <Form
-        brand={brand}
+        brand={page !== 'register' ? brand: ''}
         page={page}
         onSubmit={handleSubmit}
         BrandActions={BrandActions}

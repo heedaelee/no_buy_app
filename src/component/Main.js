@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import FormContainer from "container/FormContainer";
-import Content from "component/common/Content";
+import {Content} from "component/common/Content";
 import BrandListContainer from "container/BrandListContainer";
 
 const Wrapper = styled.div`

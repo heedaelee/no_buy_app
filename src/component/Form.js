@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import styled from "styled-components";
 
-
 const FormBlock = styled.div``;
 
 const Buttons = styled.div`
@@ -30,6 +29,18 @@ const Form = ({ onRemove, onSubmit, brand, page, goBack }) => {
   let title;
   let content;
 
+  if (page === "register") {
+    let node_title = document.getElementsByName("title");
+    for (let i = 0; i < node_title.length; ++i) {
+      node_title[0].value = "";
+    }
+
+    let node_content = document.getElementsByName("content");
+    for (let i = 0; i < node_content.length; ++i) {
+      node_content[0].value = "";
+    }
+  }
+
   return (
     <FormBlock>
       <Typography className={classes.h6}>브랜드 입력</Typography>
@@ -39,7 +50,7 @@ const Form = ({ onRemove, onSubmit, brand, page, goBack }) => {
         }}
         autoComplete="off"
         required
-        id="name"
+        id="title"
         name="title"
         label="브랜드 명"
         fullWidth

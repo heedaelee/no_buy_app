@@ -1,13 +1,28 @@
 import React from "react";
-import Content from "component/common/Content";
+import { ListContent } from "component/common/Content";
+import styled from "styled-components";
 
-const style={cursor: "pointer"}
+const Title = styled.div`
+  width: 40%;
+  color:#2962ff;
+  font-size:1.1rem;
+  font-weight:800;
+`
+const Content = styled.div`
+  width: 60%;
+  text-align:center;
+  
+`
 
 const Brand = ({ brand, index, clickHandle }) => (
-  <Content  style={style} onClick={() => clickHandle(index)}>
-    <h3>{brand.title}</h3>
-    <p>{brand.content}</p>
-  </Content>
+  <ListContent onClick={() => clickHandle(index)}>
+    <Title>
+      {brand.title}
+    </Title>
+    <Content>
+      {brand.content}
+    </Content>
+  </ListContent>
 );
 
 export default Brand;
