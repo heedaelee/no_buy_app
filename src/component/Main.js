@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import FormContainer from "container/FormContainer";
-import {Content} from "component/common/Content";
+import { Content } from "component/common/Content";
 import BrandListContainer from "container/BrandListContainer";
 
 const Wrapper = styled.div`
@@ -18,11 +18,24 @@ const TextBlock = styled.div`
 
 const MenuText = styled.h2`
   display: inline;
+  position: relative;
   margin: 0px 2px;
   cursor: pointer;
   &:hover {
     color: #0984e3;
   }
+`;
+const Center = styled.h2`
+  display: inline;
+  margin: 0px 2px;
+`;
+const Underline = styled.div`
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  top: 35px;
+  position: absolute;
+  background: #0984e3;
 `;
 
 const Header = styled.div``;
@@ -32,14 +45,20 @@ const Main = ({ page, onChangePage }) => (
     <Content>
       <Header>
         <TextBlock>
-          <MenuText onClick={() => onChangePage("list")}>조회</MenuText>
-          <MenuText style={{ cursor: "" }}>|</MenuText>
-          <MenuText onClick={() => onChangePage("register")}>등록</MenuText>
+          <MenuText onClick={() => onChangePage("list")}>
+            조회
+            {page === "list" && <Underline />}
+          </MenuText>
+          <Center>|</Center>
+          <MenuText onClick={() => onChangePage("register")}>
+            등록
+            {page === "register" && <Underline />}
+          </MenuText>
         </TextBlock>
       </Header>
     </Content>
     {page === "list" ? (
-      <BrandListContainer />
+        <BrandListContainer />
     ) : (
       <Content>
         <FormContainer page={page} />

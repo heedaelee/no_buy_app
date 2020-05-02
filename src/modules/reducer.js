@@ -8,8 +8,8 @@ const initialState = {
   brands: [
     {
       id: 0,
-      title: "프라다",
-      content: "제품 불량",
+      title: "브랜드 이름",
+      content: "등록 사유",
       img: 0,
     },
   ],
