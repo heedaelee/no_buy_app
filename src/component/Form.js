@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import styled from "styled-components";
 
+const commonFont = "'Cafe24Dangdanghae',sans-serif;";
 const FormBlock = styled.div``;
 
 const Buttons = styled.div`
@@ -17,10 +18,12 @@ const useStyles = makeStyles((theme) => ({
   button: {
     fontWeight: "bold",
     fontSize: "1.1rem",
+    fontFamily: commonFont,
   },
   h6: {
     fontWeight: "bold",
     fontSize: "1.3rem",
+    fontFamily: commonFont,
   },
 }));
 
@@ -52,7 +55,7 @@ const Form = ({ onRemove, onSubmit, brand, page, goBack }) => {
         required
         id="title"
         name="title"
-        label="브랜드 명"
+        label="불매할 브랜드를 입력하세요"
         fullWidth
         defaultValue={brand ? brand.title : ""}
       />
@@ -63,7 +66,7 @@ const Form = ({ onRemove, onSubmit, brand, page, goBack }) => {
       <TextField
         id="content"
         name="content"
-        label="등록 사유"
+        label="등록 사유를 입력하세요"
         inputRef={(node) => {
           content = node;
         }}

@@ -2,7 +2,7 @@
   "name": "불매",
   "short_name": "불매",
   "start_url": ".",
-  "display":"standalone",
+  "display": "standalone",
   "icons": [
     {
       "src": "./icons/apple-touch-icon-57x57.png",
@@ -35,7 +35,6 @@
       "type": "image/png"
     },
 
-
     {
       "src": "./icons/apple-touch-icon-152x152.png",
       "sizes": "152x152",
@@ -44,11 +43,6 @@
     {
       "src": "./icons/mstile-310x310.png",
       "sizes": "310x310",
-      "type": "image/png"
-    },
-    {
-      "src": "./icons/android-chrome-512x512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ],

@@ -10,6 +10,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
 import "./index.css";
+import { createGlobalStyle } from "styled-components";
 
 const persistConfig = {
   key: "root",
@@ -27,9 +28,20 @@ const composeEnhancers = devTools || compose;
 const store = createStore(persistedReducer, composeEnhancers());
 const persistor = persistStore(store);
 
+const GlobalStyles = createGlobalStyle`
+@font-face { 
+  font-family: 'Cafe24Dangdanghae'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+`;
+
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
+      <GlobalStyles />
       <BrowserRouter basename="/no_buy_app">
         <App />
       </BrowserRouter>

@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 //제목 컨텐츠
 
-const backgroundColor = '#ffffff';
-const borderRadius = '10px';
+const backgroundColor = "#ffffff";
+const borderRadius = "10px";
 
 export const Content = styled.div`
   max-width: 400px;
@@ -21,7 +21,7 @@ export const Content = styled.div`
     margin: 0;
     padding: 0;
   }
-  `;
+`;
 
 //리스트 컨텐츠
 export const ListContent = styled.div`
@@ -32,7 +32,7 @@ export const ListContent = styled.div`
   margin-top: 10px;
   text-align: center;
   cursor: pointer;
-  display:flex;
+  display: flex;
   background-color: ${backgroundColor};
   border-radius: ${borderRadius};
   h3 {

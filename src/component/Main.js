@@ -58,7 +58,7 @@ const Main = ({ page, onChangePage }) => (
       </Header>
     </Content>
     {page === "list" ? (
-        <BrandListContainer />
+      <BrandListContainer />
     ) : (
       <Content>
         <FormContainer page={page} />
